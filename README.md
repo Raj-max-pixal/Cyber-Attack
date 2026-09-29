@@ -1,62 +1,251 @@
-# 🕸️ AttackWeave
+# 🛡️ CyberTrace AI
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Cybersecurity-AI--Powered-00D4FF?style=for-the-badge&logo=hackthebox&logoColor=white" />
-  <img src="https://img.shields.io/badge/Threat%20Detection-Real--Time-FF3B81?style=for-the-badge&logo=shield&logoColor=white" />
-  <img src="https://img.shields.io/badge/AI-Driven-8B5CF6?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-API-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-Frontend-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 </p>
 
 <p align="center">
-  <b>🛡️ See the Attack. Understand the Threat. Stop It Faster.</b>
+  <img src="https://img.shields.io/badge/SQLAlchemy-Database-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white" />
+  <img src="https://img.shields.io/badge/MITRE%20ATT%26CK-Mapped-FF6B35?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Cybersecurity-SOC-111827?style=for-the-badge&logo=hackthebox&logoColor=white" />
 </p>
 
 <p align="center">
-  AttackWeave is an AI-powered cyber threat analysis platform that transforms<br/>
-  scattered security events into an intelligent, connected view of cyberattacks.
+  <b>Multi-Stage Cyberattack Reconstruction & Lateral Movement Prediction Platform</b>
+</p>
+
+<p align="center">
+  <strong>From fragmented security telemetry to one complete attack story.</strong>
 </p>
 
 ---
 
-## ⚡ What is AttackWeave?
+## ⚡ What is CyberTrace AI?
 
-Cyberattacks rarely happen as a single event.
+Cyberattacks rarely appear as a single obvious event.
 
-They leave behind a trail of **login attempts, suspicious processes, network connections, compromised hosts, and attack techniques**.
+Modern security environments generate fragmented telemetry from authentication systems, DNS activity, endpoint processes, network connections, and host relationships.
 
-AttackWeave connects these signals together.
+Individually, these events may look unrelated.
+
+CyberTrace AI is designed to connect those fragments and transform them into a **correlated, explainable incident story**.
 
 ```text
-       🔐 Security Events
-              │
-              ▼
-       🧠 AI Analysis
-              │
-              ▼
-      🔗 Attack Correlation
-              │
-              ▼
-       🕸️ Attack Graph
-              │
-              ▼
-      🚨 Threat Detection
-              │
-              ▼
-       ⚔️ Response Insights
+🔐 Authentication Logs
+          │
+          ▼
+🌐 DNS Telemetry
+          │
+          ▼
+⚙️ Process Telemetry
+          │
+          ▼
+      Normalization
+          │
+          ▼
+    🔗 Correlation
+          │
+          ▼
+🎯 MITRE ATT&CK Mapping
+          │
+          ▼
+🧩 Attack Reconstruction
+          │
+          ▼
+🕵️ Root-Cause Analysis
+          │
+          ▼
+🚨 Lateral Movement Detection
+          │
+          ▼
+🎯 Next-Target Prediction
+          │
+          ▼
+🕸️ Incident Graph
 ```
 
-Instead of looking at thousands of isolated alerts, security teams can see the **attack chain as a connected story**.
+> **One alert can be noise. Connected evidence can reveal the attack.**
 
 ---
 
-## 🧠 Core Features
+# 🎯 BYTEATHON 2026 Problem
 
-### 🔍 Intelligent Threat Detection
+### Reconstructing Multi-Stage Cyberattacks and Anticipating Lateral Movement by Correlating Fragmented Security Telemetry Across Networked Systems
 
-Detect suspicious activity and identify potential cyberattacks from security telemetry.
+CyberTrace AI is being developed as a defensive cybersecurity and digital-forensics solution for this challenge.
 
-### 🕸️ Attack Graph Visualization
+The platform focuses on connecting fragmented telemetry across systems to help analysts understand:
 
-Visualize relationships between:
+* Where an attack may have started
+* How activity progressed
+* Which systems were affected
+* How lateral movement occurred
+* Which MITRE ATT&CK techniques are represented
+* What assets may be at risk next
+
+---
+
+# 🧠 Project Overview
+
+CyberTrace AI follows a security-analysis pipeline:
+
+```text
+┌───────────────────────┐
+│   Raw Security Data   │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│    Normalization      │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│   Event Correlation    │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│ MITRE ATT&CK Mapping  │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│ Attack Reconstruction │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│ Root-Cause Analysis   │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│ Lateral Movement      │
+│ Detection             │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│ Next-Target Prediction│
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│    Incident Graph     │
+└───────────────────────┘
+```
+
+---
+
+# 🔍 Telemetry Sources
+
+CyberTrace AI is designed to correlate multiple types of security telemetry.
+
+### 🔐 Authentication
+
+```text
+WORKSTATION-01
+      │
+      ▼
+     DEV-01
+```
+
+### 🌐 DNS
+
+```text
+WORKSTATION-01
+      │
+      ▼
+suspicious-domain.example
+```
+
+### ⚙️ Process Telemetry
+
+```text
+winword.exe
+      │
+      ▼
+powershell.exe
+```
+
+When viewed separately, these events may not provide enough context.
+
+CyberTrace AI connects the evidence to create a broader incident view.
+
+---
+
+# 🧩 Core Features
+
+## 🔍 Multi-Source Telemetry
+
+Supports security telemetry such as:
+
+* Authentication events
+* DNS events
+* Process events
+* CSV/JSON telemetry
+
+---
+
+## 🔗 Event Correlation
+
+Events can be correlated using:
+
+* Timestamps
+* Hosts
+* Users
+* Source/destination relationships
+* Process relationships
+* Behavioral evidence
+
+---
+
+## 🎯 MITRE ATT&CK Mapping
+
+Observed behaviors can be mapped to relevant **MITRE ATT&CK tactics and techniques**.
+
+```text
+Security Event
+      │
+      ▼
+Behavior Analysis
+      │
+      ▼
+MITRE ATT&CK Technique
+      │
+      ▼
+Attack Stage
+```
+
+---
+
+## 🧩 Multi-Stage Attack Reconstruction
+
+CyberTrace AI reconstructs related security events into a chronological attack chain.
+
+```text
+Initial Activity
+      ↓
+Execution
+      ↓
+Compromise
+      ↓
+Lateral Movement
+      ↓
+Additional Host Activity
+      ↓
+Potential Next Target
+```
+
+---
+
+## 🚨 Lateral Movement Detection
+
+Identify suspicious movement between networked systems by analyzing relationships between:
 
 ```text
 👤 Users
@@ -65,87 +254,93 @@ Visualize relationships between:
    ↓
 ⚙️ Processes
    ↓
-🌐 Network Connections
+🌐 Network Activity
    ↓
-🎯 Attack Techniques
+🎯 Target Assets
 ```
 
-### 🧩 Attack Chain Correlation
+---
 
-Connect individual security events to reconstruct how an attack progressed through the environment.
+## 🕵️ Root-Cause Analysis
 
-### 🎯 MITRE ATT&CK Mapping
+Identify the strongest observed candidate for the initial entry point based on available telemetry and correlated evidence.
 
-Map detected behaviors to relevant MITRE ATT&CK techniques and tactics.
+---
 
-### 🤖 AI-Powered Analysis
+## 🧠 Next-Target Prediction
 
-Use AI to analyze correlated events and generate meaningful threat insights instead of overwhelming analysts with raw logs.
+CyberTrace AI can estimate potential next-target assets using **explainable risk scoring** based on observed relationships and security evidence.
 
-### 🚨 Incident Investigation
+> Predictions are intended to be evidence-based and explainable rather than opaque guesses.
 
-Investigate affected hosts, suspicious activities, attack techniques, and related security events from a unified interface.
+---
+
+# 🕸️ Incident Graph
+
+CyberTrace AI transforms fragmented telemetry into a connected incident graph.
+
+```text
+                  👤 USER
+                    │
+                    ▼
+              💻 WORKSTATION
+                    │
+             ┌──────┴──────┐
+             ▼             ▼
+       ⚙️ PROCESS      🌐 DNS
+             │             │
+             └──────┬──────┘
+                    ▼
+              💻 DEV-01
+                    │
+                    ▼
+              💻 SERVER-01
+                    │
+                    ▼
+                🗄️ DB-01
+```
+
+The graph provides a visual representation of relationships between:
+
+* Hosts
+* Users
+* Processes
+* Events
+* Attack stages
 
 ---
 
 # 🏗️ Architecture
 
-```text
-                  ┌──────────────────────┐
-                  │   Security Sources   │
-                  │ Logs • Events • Data │
-                  └──────────┬───────────┘
-                             │
-                             ▼
-                  ┌──────────────────────┐
-                  │   AttackWeave Core   │
-                  │ Event Processing     │
-                  └──────────┬───────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              ▼              ▼              ▼
-        🔎 Detection     🧠 AI Engine    🧩 Correlation
-              │              │              │
-              └──────────────┼──────────────┘
-                             ▼
-                  ┌──────────────────────┐
-                  │   Attack Graph       │
-                  │ Users • Hosts • TTPs │
-                  └──────────┬───────────┘
-                             │
-                             ▼
-                  ┌──────────────────────┐
-                  │   Security Dashboard │
-                  └──────────────────────┘
-```
+```mermaid
+flowchart TD
+    A[Authentication Logs]
+    B[DNS Logs]
+    C[Process Telemetry]
 
----
+    A --> D[Telemetry Ingestion]
+    B --> D
+    C --> D
 
-# 🚀 Why AttackWeave?
+    D --> E[Normalization]
+    E --> F[Correlation Engine]
 
-Traditional security monitoring often produces a huge number of alerts.
+    F --> G[MITRE ATT&CK Mapper]
+    F --> H[Lateral Movement Detector]
 
-AttackWeave focuses on the **relationships between those alerts**.
+    G --> I[Attack Chain Reconstruction]
+    H --> I
 
-> **One alert can be noise.
-> Connected alerts can reveal an attack.**
+    I --> J[Root Cause Analysis]
+    I --> K[Risk Engine]
 
-AttackWeave helps analysts move from:
+    K --> L[Next Target Prediction]
 
-```diff
-- Thousands of isolated security events
-- Manual investigation
-- Alert overload
-- Fragmented visibility
-```
+    I --> M[Incident Graph]
+    J --> M
+    L --> M
 
-to:
-
-```diff
-+ Connected attack chains
-+ AI-assisted investigation
-+ Threat visualization
-+ Faster incident understanding
+    M --> N[SOC Dashboard]
 ```
 
 ---
@@ -153,192 +348,443 @@ to:
 # 🎬 Attack Investigation Flow
 
 ```text
-      🚨 Suspicious Event
-              │
-              ▼
-       🔎 Detection
-              │
-              ▼
-       🧩 Correlation
-              │
-              ▼
-       🕸️ Attack Graph
-              │
-              ▼
-       🎯 TTP Identification
-              │
-              ▼
-       🤖 AI Analysis
-              │
-              ▼
-       🛡️ Response
+🚨 Suspicious Event
+        │
+        ▼
+🔎 Detection
+        │
+        ▼
+🔗 Event Correlation
+        │
+        ▼
+🎯 MITRE ATT&CK Mapping
+        │
+        ▼
+🧩 Attack Reconstruction
+        │
+        ▼
+🕵️ Root-Cause Analysis
+        │
+        ▼
+🚨 Lateral Movement
+        │
+        ▼
+🧠 Risk Analysis
+        │
+        ▼
+🎯 Next-Target Prediction
+        │
+        ▼
+🕸️ Incident Graph
 ```
 
 ---
 
 # 💻 Technology Stack
 
-| Layer                   | Technology                           |
-| ----------------------- | ------------------------------------ |
-| 🖥️ Frontend            | React / TypeScript                   |
-| 🎨 UI                   | Modern Cybersecurity Dashboard       |
-| ⚙️ Backend              | Python                               |
-| 🧠 AI                   | AI-powered threat analysis           |
-| 🗄️ Database            | Structured security data             |
-| 🛡️ Threat Intelligence | MITRE ATT&CK                         |
-| 📊 Visualization        | Attack Graph / Network Visualization |
-| 🔐 Security             | Authentication & RBAC                |
+| Layer                  | Technology                     |
+| ---------------------- | ------------------------------ |
+| 🖥️ Frontend           | React + TypeScript             |
+| 🎨 UI                  | Tailwind CSS                   |
+| 🕸️ Graph              | React Flow                     |
+| ⚙️ Backend             | Python + FastAPI               |
+| 📋 Validation          | Pydantic                       |
+| 🗄️ Database           | SQLAlchemy + SQLite/PostgreSQL |
+| 📊 Analytics           | Python                         |
+| 🧩 Graph Analysis      | NetworkX                       |
+| 🛡️ Security Framework | MITRE ATT&CK                   |
+| 🚀 API Server          | Uvicorn                        |
 
 ---
 
-# 📊 What AttackWeave Can Analyze
+# 📊 Data Flow
 
 ```text
-┌─────────────────────────────────────────────┐
-│              ATTACKWEAVE                    │
-├─────────────────────────────────────────────┤
-│                                             │
-│  👤 User                                    │
-│      │                                      │
-│      ▼                                      │
-│  🔑 Credential Access                       │
-│      │                                      │
-│      ▼                                      │
-│  💻 Compromised Host                        │
-│      │                                      │
-│      ▼                                      │
-│  ⚙️ Malicious Process                       │
-│      │                                      │
-│      ▼                                      │
-│  🌐 Command & Control                       │
-│      │                                      │
-│      ▼                                      │
-│  🎯 Target System                            │
-│                                             │
-└─────────────────────────────────────────────┘
+┌──────────────────┐
+│    Telemetry     │
+└────────┬─────────┘
+         ▼
+┌──────────────────┐
+│      Parser      │
+└────────┬─────────┘
+         ▼
+┌──────────────────┐
+│ Normalized Events│
+└────────┬─────────┘
+         ▼
+┌──────────────────┐
+│    Correlation   │
+└────────┬─────────┘
+         ▼
+┌──────────────────┐
+│ Security Analysis│
+└────────┬─────────┘
+         ▼
+┌──────────────────┐
+│  MITRE ATT&CK    │
+└────────┬─────────┘
+         ▼
+┌──────────────────┐
+│Incident           │
+│Reconstruction    │
+└────────┬─────────┘
+         ▼
+┌──────────────────┐
+│ Risk & Prediction│
+└────────┬─────────┘
+         ▼
+┌──────────────────┐
+│ SOC Visualization│
+└──────────────────┘
+```
+
+### Pipeline Stages
+
+**Telemetry** → Collect security events.
+
+**Parser** → Convert incoming data into structured events.
+
+**Normalization** → Standardize telemetry fields.
+
+**Correlation** → Connect events through shared evidence.
+
+**Security Analysis** → Identify suspicious behavior.
+
+**MITRE ATT&CK** → Map observed behavior to attack techniques.
+
+**Incident Reconstruction** → Build the chronological attack story.
+
+**Risk & Prediction** → Analyze potential movement and target exposure.
+
+**SOC Visualization** → Present the investigation through dashboards and graphs.
+
+---
+
+# 🧪 Demo Scenario
+
+CyberTrace AI can use deterministic synthetic telemetry for safe demonstration and testing.
+
+```text
+🌐 EXTERNAL SOURCE
+        │
+        ▼
+💻 WORKSTATION-01
+        │
+        ▼
+💻 DEV-01
+        │
+        ▼
+🖥️ SERVER-01
+        │
+        ▼
+🗄️ DB-01
+```
+
+The demonstration can show how fragmented telemetry is correlated across these assets.
+
+> ⚠️ The demonstration uses synthetic security data and does not perform real attacks.
+
+---
+
+# 🔌 API
+
+The API documentation below should reflect only endpoints implemented in the current backend.
+
+Example API surface:
+
+```text
+GET  /api/health
+
+POST /api/telemetry/upload
+
+POST /api/analysis/run
+
+GET  /api/telemetry
+
+GET  /api/hosts
+
+GET  /api/incidents
+```
+
+If implemented:
+
+```text
+GET /api/incidents/{id}/graph
+
+GET /api/incidents/{id}/timeline
+
+GET /api/incidents/{id}/predictions
+
+GET /api/mitre/techniques
+```
+
+Swagger documentation:
+
+```text
+http://localhost:8001/docs
 ```
 
 ---
 
-# 🔥 Project Vision
+# 🛠️ Installation
 
-AttackWeave aims to make cybersecurity investigation more **connected, visual, intelligent, and actionable**.
-
-Instead of asking:
-
-> **"Which alert should I investigate?"**
-
-AttackWeave helps answer:
-
-> **"What is happening across my environment, and how are these events connected?"**
-
----
-
-# 🛠️ Getting Started
-
-### 1️⃣ Clone the repository
+## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/attackweave.git
-cd attackweave
+git clone https://github.com/Raj-max-pixal/CyberTrace-AI.git
+cd CyberTrace-AI
 ```
 
-### 2️⃣ Install dependencies
+## 2️⃣ Backend
 
-```bash
-npm install
-```
-
-or, for the backend:
+Create and activate your Python environment, then install the project's backend dependencies.
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Start the application
+## 3️⃣ Frontend
+
+```bash
+npm install
+```
+
+## 4️⃣ Start Development
 
 ```bash
 npm run dev
 ```
 
+> Use the repository's current configuration files to determine the exact backend and frontend startup commands.
+
 ---
 
-# 🧪 Example Investigation
+# 📁 Repository Structure
 
 ```text
-🚨 Event Detected
-      ↓
-🔑 Suspicious Login
-      ↓
-💻 Host Compromise
-      ↓
-⚙️ Suspicious Process
-      ↓
-🌐 External Connection
-      ↓
-🎯 ATT&CK Technique
-      ↓
-🧠 AI Analysis
-      ↓
-🛡️ Recommended Response
+CyberTrace-AI/
+│
+├── backend/
+│   ├── app/
+│   └── ...
+│
+├── frontend/
+│   ├── src/
+│   └── ...
+│
+├── data/
+│
+├── docs/
+│
+├── tests/
+│
+├── README.md
+│
+└── ...
 ```
 
-AttackWeave turns this sequence into a **single connected investigation view**.
+> The structure above represents the intended organization; the actual repository structure should remain the source of truth.
 
 ---
 
-# 🌟 Key Advantages
+# 🔐 Security & Ethics
 
-✨ **AI-assisted investigation**
+CyberTrace AI is a **defensive cybersecurity analytics project**.
 
-🕸️ **Attack-chain visualization**
+The project focuses on:
 
-🔗 **Event correlation**
+* ✅ Security monitoring
+* ✅ Threat analysis
+* ✅ Incident reconstruction
+* ✅ Digital forensics
+* ✅ Lateral-movement analysis
+* ✅ Defensive incident response
 
-🎯 **MITRE ATT&CK mapping**
+The demonstration is designed around synthetic telemetry.
 
-🚨 **Incident-focused monitoring**
+CyberTrace AI does **not**:
 
-📊 **Security intelligence dashboard**
-
-⚡ **Faster threat investigation**
+* ❌ Perform unauthorized attacks
+* ❌ Deploy malware
+* ❌ Collect real credentials
+* ❌ Conduct unauthorized scanning
+* ❌ Target real systems
 
 ---
 
-# 🔮 Future Roadmap
+# ⚠️ Current Implementation
+
+CyberTrace AI separates implemented functionality from future development.
+
+### ✅ Current / Implemented
+
+* Telemetry ingestion
+* Event normalization
+* Security-event processing
+* Backend API foundation
+* Database models
+* Synthetic demonstration data
+* Cybersecurity analysis foundation
+
+### 🚧 Planned / Roadmap
+
+* Advanced event correlation
+* Expanded MITRE ATT&CK mapping
+* Advanced attack reconstruction
+* Interactive incident graphs
+* Real-time telemetry
+* Enterprise SIEM integrations
+* Advanced graph analytics
+* ML-based prediction
+* Automated incident reporting
+
+> Features should only be marked as completed when they exist in the current repository implementation.
+
+---
+
+# 🔮 Roadmap
+
+### Phase 1 — Foundation
+
+* [x] FastAPI backend
+* [x] Normalized telemetry
+* [x] Database models
+* [x] Telemetry ingestion
+* [x] Deterministic demo data
+
+### Phase 2 — Intelligence
+
+* [ ] Advanced event correlation
+* [ ] MITRE ATT&CK mapping
+* [ ] Attack reconstruction
+* [ ] Lateral movement detection
+* [ ] Root-cause analysis
+* [ ] Next-target prediction
+
+### Phase 3 — Visualization
+
+* [ ] React Flow incident graph
+* [ ] Interactive timeline
+* [ ] Host investigation
+* [ ] Attack-path visualization
+
+### Phase 4 — Advanced SOC
+
+* [ ] Real-time telemetry
+* [ ] SIEM integrations
+* [ ] Threat intelligence enrichment
+* [ ] Advanced graph analytics
+* [ ] ML-based prediction
+* [ ] Automated incident reports
+
+---
+
+# 🏆 BYTEATHON Demo Flow
 
 ```text
-[████████████████████] Core Platform
-
-[████████████████░░░░] AI Threat Analysis
-
-[██████████████░░░░░░] Advanced Attack Graphs
-
-[████████████░░░░░░░░] Automated Response
-
-[██████████░░░░░░░░░░] Predictive Threat Detection
+01  📥 Load Synthetic Telemetry
+          ↓
+02  🔎 Run Security Analysis
+          ↓
+03  🚨 Detect Suspicious Activity
+          ↓
+04  🔗 Correlate Events Across Hosts
+          ↓
+05  🧩 Reconstruct Attack Chain
+          ↓
+06  🚨 Identify Lateral Movement
+          ↓
+07  🕵️ Identify Likely Root Cause
+          ↓
+08  🕸️ Generate Incident Graph
+          ↓
+09  🎯 Predict Potential Next Target
+          ↓
+10  🧠 Explain the Prediction
 ```
 
-### Coming Next
+---
 
-* 🤖 Advanced AI threat prediction
-* 🔗 Automated attack-chain reconstruction
-* 📡 Real-time security telemetry
-* 🧠 Threat intelligence enrichment
-* ⚔️ Automated incident response
-* 📈 Security analytics and trends
-* 🌐 Distributed monitoring
+# ⚡ Why CyberTrace AI?
+
+### Traditional Alert View
+
+```text
+🚨 Alert 1
+
+🚨 Alert 2
+
+🚨 Alert 3
+
+🚨 Alert 4
+```
+
+### CyberTrace AI
+
+```text
+              🎯 Entry Point
+                    │
+                    ▼
+               ⚙️ Execution
+                    │
+                    ▼
+               💻 Compromise
+                    │
+                    ▼
+            🔗 Lateral Movement
+                    │
+                    ▼
+             🎯 Potential Target
+```
+
+The key idea:
+
+> **CyberTrace AI is designed to turn fragmented security telemetry into a connected, explainable attack narrative instead of treating every alert as an isolated event.**
+
+---
+
+# 🌟 Key Highlights
+
+```text
+        ┌─────────────────────────────┐
+        │       CYBERTRACE AI         │
+        ├─────────────────────────────┤
+        │                             │
+        │ 🔍 Telemetry Correlation    │
+        │ 🧩 Attack Reconstruction    │
+        │ 🎯 MITRE ATT&CK Mapping     │
+        │ 🚨 Lateral Movement         │
+        │ 🕵️ Root-Cause Analysis     │
+        │ 🧠 Risk-Based Prediction    │
+        │ 🕸️ Incident Graph           │
+        │ 📊 SOC Dashboard             │
+        │                             │
+        └─────────────────────────────┘
+```
+
+---
+
+# 🏆 Built for BYTEATHON 2026
+
+### Theme
+
+**Cybersecurity / Digital Forensics**
+
+### Problem
+
+**Reconstructing Multi-Stage Cyberattacks and Anticipating Lateral Movement by Correlating Fragmented Security Telemetry Across Networked Systems**
+
+CyberTrace AI focuses on connecting fragmented evidence into a structured, explainable incident narrative.
 
 ---
 
 # 👥 Team
 
-Built with ❤️ for cybersecurity innovation.
+Built with ❤️ by Raj for cybersecurity innovation.
 
-**AttackWeave**
+## 🛡️ CyberTrace AI
 
-> **We don't just detect attacks.
-> We weave the evidence together. 🕸️**
+> **From fragmented security telemetry to one complete attack story.**
 
 ---
 
