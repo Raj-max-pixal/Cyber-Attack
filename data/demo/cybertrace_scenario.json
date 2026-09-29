@@ -1,0 +1,15 @@
+[
+  {"timestamp":"2026-10-01T10:04:11Z","event_type":"authentication","host":"WORKSTATION-02","source_host":"WORKSTATION-02","destination_host":"FILE-01","username":"mira","action":"interactive_login","severity":"low","status":"success"},
+  {"timestamp":"2026-10-01T10:05:22Z","event_type":"dns","host":"WORKSTATION-01","action":"dns_query","query":"cdn-sync-update.example","response":"203.0.113.50","severity":"high"},
+  {"timestamp":"2026-10-01T10:06:14Z","event_type":"process","host":"WORKSTATION-01","parent_process":"winword.exe","process":"powershell.exe","command_line":"powershell -enc synthetic-demo","severity":"high"},
+  {"timestamp":"2026-10-01T10:08:02Z","event_type":"dns","host":"DEV-01","action":"dns_query","query":"packages.internal.example","response":"10.0.0.18","severity":"low"},
+  {"timestamp":"2026-10-01T10:10:44Z","event_type":"process","host":"ADMIN-01","parent_process":"explorer.exe","process":"mmc.exe","command_line":"mmc.exe services.msc","severity":"low"},
+  {"timestamp":"2026-10-01T10:14:07Z","event_type":"authentication","source_host":"WORKSTATION-01","destination_host":"DEV-01","username":"analyst","action":"remote_login","authentication_type":"remote","status":"success","source_ip":"192.168.1.50","severity":"high"},
+  {"timestamp":"2026-10-01T10:15:02Z","event_type":"process","host":"DEV-01","parent_process":"services.exe","process":"psexec.exe","command_line":"psexec.exe \\\\SERVER-01 cmd.exe","severity":"high"},
+  {"timestamp":"2026-10-01T10:16:30Z","event_type":"authentication","source_host":"SERVER-02","destination_host":"FILE-01","username":"backup","action":"scheduled_login","status":"success","severity":"low"},
+  {"timestamp":"2026-10-01T10:18:18Z","event_type":"network","source_host":"DEV-01","destination_host":"SERVER-01","action":"remote_service_connection","destination_ip":"10.0.0.21","severity":"high"},
+  {"timestamp":"2026-10-01T10:19:03Z","event_type":"process","host":"SERVER-01","parent_process":"psexesvc.exe","process":"cmd.exe","command_line":"cmd.exe /c whoami","severity":"high"},
+  {"timestamp":"2026-10-01T10:20:11Z","event_type":"authentication","source_host":"SERVER-01","destination_host":"DB-01","username":"svc-reporting","action":"remote_login","authentication_type":"service","status":"success","severity":"medium"},
+  {"timestamp":"2026-10-01T10:21:08Z","event_type":"network","source_host":"SERVER-01","destination_host":"DB-01","action":"database_connection","destination_ip":"10.0.0.31","severity":"high"},
+  {"timestamp":"2026-10-01T10:22:41Z","event_type":"dns","host":"SERVER-01","action":"dns_query","query":"updates.corp.example","response":"10.0.0.9","severity":"low"}
+]
